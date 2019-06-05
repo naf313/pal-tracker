@@ -27,7 +27,7 @@ public class EnvController {
 
     @GetMapping("/env")
     public Map<String, String> getEnv() {
-        return new HashMap<>() {{
+        return new HashMap<String,String>() {{
             put("PORT", port);
             put("MEMORY_LIMIT", memoryLimit);
             put("CF_INSTANCE_INDEX", cfInstanceIndex);
